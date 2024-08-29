@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<head>
+<meta charset="UTF-8">
+<title>Landing page</title>
+</head>
+
+<body class="bg-slate-200 p-1">
+<div th:insert="~{header :: copy}"></div>
+
+<div class="container mx-auto">
+    <div class="flex justify-center items-center p-1">
+
+        <div class="w-1/3 border-yellow-700">
+            <a href="#"
+               class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="m-4 grid grid-flow-col gap-4 p-20">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" ><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </div>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-500 dark:text-white">
+                    Sistema de consultas para Abogados</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Asistente para personal a de la actividad legal que desea realizar consultas en diferentes fuentes de información con la seguridad que solo se usan los documentos de la base de conocimientos.
+                </p>
+            </a>
+
+        </div>
+
+        <div class="w-2/3">
+        <img src="justicia.jpg" alt="Abogados" width="800" height="500">
+        </div>
+
+    </div>
+
+    <div class="flex justify-center items-center p-1 ">
+        <div type="Submit" class="flex justify-center items-center p-1 ">
+            <a th:href="@{/busquedas}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Entrar
+            </a>
+        </div>
+    </div>
+
+
+    <div class="flex justify-center items-center p-4 ">
+        <div class="w-1/3">
+            <a href="#"
+               class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="flex cursor-pointer p-2 justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                </div>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-500 dark:text-white">
+                    Búsquedas semánticas</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">El sistema resuelve las preguntas con la base de conocimiento previamente generada con los documentos del cliente, más allá de la conocidas búsquedas por similitud de texto.
+                    </p>
+            </a>
+        </div>
+        <div class="w-1/3">
+            <a href="#"
+               class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="flex cursor-pointer p-2 justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+
+
+                </div>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-500 dark:text-white">Uso de la inteligencia Artificial
+                    </h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Para resolver las consultas se usa los últimos modelos de Inteligencia Artificial,
+                    como por ejemplo: Gemini de Google, Titan de Amazon, chatGPT de OpenAI, etc.
+                    </p>
+            </a>
+        </div>
+        <div class="w-1/3">
+            <a href="#"
+               class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div class="flex cursor-pointer p-2 justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75" />
+                    </svg>
+                </div>
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-500 dark:text-white">Totalmente dinámico
+                    </h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Dependiendo de las necesidades del cliente, se pueden integrar una gran cantidad de tipos de documentos en la base de conocimiento del sistema.
+                    </p>
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+<div th:insert="~{footer :: copy}"></div>
+</html>
